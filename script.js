@@ -9,7 +9,7 @@ function c2f(){
     else if(f_deg !== ""){
         c_deg = (f_deg -32) * 5 / 9
         document.getElementById("tempc").value = c_deg
-    }
+    }    
 }
 
 
@@ -41,4 +41,23 @@ function km2mi(){
         ds_km = ds_mi * 1.609
         document.getElementById("dskm").value = ds_km
     }
+}
+
+function reset_temp(){
+    let c_deg = document.getElementById("tempc");
+    let f_deg = document.getElementById("tempf");
+    c_deg.value = "";
+    f_deg.value = "";
+}
+function reset_wgt(){
+    let wt_kg = document.getElementById("wtkg");
+    let wt_pd = document.getElementById("wtpd");
+    wt_kg.value = "";
+    wt_pd.value = "";
+}
+function reset_dist(){
+    let ds_km = document.getElementById("dskm");
+    let ds_mi = document.getElementById("dsmi");
+    ds_km.value = "";
+    ds_mi.value = "";
 }
